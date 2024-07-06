@@ -11,7 +11,7 @@ const [product , setproduct] = useState ([])
 const navigate = useNavigate()
 const dispatch = useDispatch()
 useEffect(()=>{
-  axios. get('https://api.jsonbin.io/v3/b/6675971ce41b4d34e406c36e')
+  axios. get('https://api.jsonbin.io/v3/b/668901ecacd3cb34a86216ee')
   .then((res) => setproduct(res.data.record))
 },[])
 
@@ -25,10 +25,7 @@ const handleBuy = (item)=>{
   navigate('/Buy')
   dispatch(productData(item))
 }
-// const handleBuy = (item)=>{
-//   ma ('/Buy')
-  
-// }
+
 
   return (
   
